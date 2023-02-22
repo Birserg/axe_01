@@ -61,6 +61,7 @@ Resources:
             # Install Ruby
             amazon-linux-extras install ruby3.1 -y
             # Install the AWS CodeDeploy Agent
+            echo $(rbenv)
             cd /home/ec2-user/
             wget https://aws-codedeploy-${AWS::Region}.s3.amazonaws.com/releases/codedeploy-agent-1.1.2-1855.noarch.rpm
             yum -y install codedeploy-agent-1.1.2-1855.noarch.rpm
