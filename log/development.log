@@ -133,3 +133,5 @@ puma (3.0.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
   Rendering /Users/sanmukhl/.rvm/gems/ruby-2.3.0@global/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/sanmukhl/.rvm/gems/ruby-2.3.0@global/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
   Rendered /Users/sanmukhl/.rvm/gems/ruby-2.3.0@global/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (186.6ms)
+  [1m[35m (162.7ms)[0m  [1m[35mCREATE DATABASE "axe_development" ENCODING = 'utf8'[0m
+  [1m[35m (42.4ms)[0m  [1m[35mCREATE DATABASE "axe_test" ENCODING = 'utf8'[0m
