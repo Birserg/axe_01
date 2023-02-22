@@ -59,6 +59,7 @@ Resources:
           Fn::Sub: |
             #!/bin/bash -ex
             # Install Ruby
+            echo $(rbenv)
             amazon-linux-extras install ruby3.1 -y
             # Install the AWS CodeDeploy Agent
             echo $(rbenv)
