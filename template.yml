@@ -60,7 +60,12 @@ Resources:
             #!/bin/bash -ex
             # Install Ruby
             echo $(rbenv)
-            amazon-linux-extras install ruby3.1 -y
+            sudo dnf -y install git make gcc curl openssl-devel zlib-devel libffi-devel readline-devel sqlite-devel
+            curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
+            echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+            echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+            source ~/.bashrc
+            # amazon-linux-extras install ruby3.1 -y
             # Install the AWS CodeDeploy Agent
             echo $(rbenv)
             cd /home/ec2-user/
