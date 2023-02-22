@@ -1,7 +1,5 @@
 #!/bin/bash
-
 cd /home/ec2-user/ruby-on-rails
-# If keyserver is unreachable, import keys directly from rvm.io
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
@@ -9,6 +7,6 @@ source ~/.bashrc
 type rbenv
 rbenv install 3.1.3
 rbenv local 3.1.3
-yum -y install ruby-devel-3.1.3 gcc-7.3.1 zlib-devel-1.2.7 patch-2.7.1 gcc-c++-7.3.1
+yum -y install ruby-devel-3.1.3 gcc-7.3.1 zlib-devel-1.2.7 patch-2.7.1 gcc-c++-7.3.1 postgresql14
 gem install -N rails -v 7.0.4
 bundle install
