@@ -135,3 +135,10 @@ puma (3.0.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
   Rendered /Users/sanmukhl/.rvm/gems/ruby-2.3.0@global/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (186.6ms)
   [1m[35m (162.7ms)[0m  [1m[35mCREATE DATABASE "axe_development" ENCODING = 'utf8'[0m
   [1m[35m (42.4ms)[0m  [1m[35mCREATE DATABASE "axe_test" ENCODING = 'utf8'[0m
+Started GET "/" for 127.0.0.1 at 2023-02-22 12:20:03 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sf/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sf/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 587)
+Completed 200 OK in 10ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 4667)
+
+
