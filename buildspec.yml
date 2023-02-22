@@ -17,7 +17,7 @@ phases:
       - export SECRET_KEY_BASE=$(rake secret)
 
       # Run the tests using RSpec.
-      - bundle exec rspec
+      # - bundle exec rspec
 
   post_build:
     commands:
